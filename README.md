@@ -1,3 +1,11 @@
+# React Spotify Clone
+
+This is an ongoing academic project intended for learning React. This project is done in conjunction with HTML + CSS + TSX.
+The first deliverable is to have completed the functional UI. 
+
+The goal and planned second large deliverable is to incorporate the Spotify API in the backend.
+More optimizations are planned as well after the main deliverables are completed.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
