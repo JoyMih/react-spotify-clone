@@ -18,8 +18,8 @@ function MediaPlayer() {
     // }, []);
 
     return (
-        <div className="md:justify-around media-bar w-full h-[20vh] fixed bottom-0">
-            <div className="current-album-info flex flex-row min-w-[28vh]">
+        <div className="media-bar w-full max-h-[18vh] fixed bottom-0">
+            <div className="current-album-info flex flex-row min-w-[25vw] me-[4rem]">
                 <img src={albumCover} alt="" className="album-cover-art flex pe-3 object-contain" />
                 <div className="flex flex-col">
                     <p>Song Title</p>

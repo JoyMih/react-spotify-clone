@@ -35,7 +35,7 @@ h3 {
   display: flex;
   align-items: center;
   text-align: left;
-  padding: 0.8em 1.2em;
+  padding: 0.5em 0.8em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -73,7 +73,7 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5%;
+  padding: 0.8rem 1.5rem;
   background-color: #121212;
   color: white;
   align-items: center;
@@ -89,9 +89,39 @@ button:focus-visible {
   height: auto;
 }
 
-.right-bar-icons * {
-  width: 0.01rem;
+.more-media-commands > * {
+  padding: 0.18rem;
 }
+
+.home-display {
+  color: white;
+  background-color: #121212;
+}
+
+.music-row {
+  width: 100%;
+}
+
+.column-divider {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.category-label {
+  text-align: start;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.placeholder-square {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(169, 161, 161);
+}
+
+
+
 
 
 
