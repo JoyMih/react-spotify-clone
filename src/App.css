@@ -19,7 +19,7 @@ h3 {
 .add-content-bar {
   display: flex;
   flex-direction: column;
-  background-color:  rgb(37, 37, 37);
+  background-color: rgb(37, 37, 37);
 }
 
 .card {
@@ -54,9 +54,11 @@ h3 {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -87,11 +89,28 @@ button:focus-visible {
   height: auto;
 }
 
-/* .play-controller {
-  max-width: fit-content;
-} */
-
-
 .right-bar-icons * {
   width: 0.01rem;
 }
+
+
+
+
+
+
+/* .navbar {
+  position: relative;
+  z-index: 1000;
+} */
+
+/* .navbar-collapse {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1050; 
+} */
+
+/* .navbar-nav {
+  z-index: 1250; 
+} */

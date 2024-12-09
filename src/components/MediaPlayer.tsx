@@ -1,9 +1,24 @@
-import albumCover from "../assets/bluepikmin-1.jpg"
+// import { useEffect, useState } from 'react';
+import albumCover from "../assets/bluepikmin-1.jpg";
+import MoreMusicOptions from "./MoreMusicOptions";
+import SongProgressBar from "./SongProgressBar";
+// import MiniHamburgerMenu from './MiniHamburgerMenu';
 
 function MediaPlayer() {
+    // const [smallScreen, setSmallScreen] = useState(false);
+    // useEffect(() => {
+    //     const resizeHandler = () => {
+    //         setSmallScreen(window.innerWidth <= 768);
+    //     };
+    //     resizeHandler();
+    //     window.addEventListener('resize', resizeHandler);
+    //     return () => {
+    //         window.removeEventListener('resize', resizeHandler);
+    //     }
+    // }, []);
 
     return (
-        <div className="media-bar w-full h-[20vh] fixed bottom-0 ">
+        <div className="md:justify-around media-bar w-full h-[20vh] fixed bottom-0">
             <div className="current-album-info flex flex-row min-w-[28vh]">
                 <img src={albumCover} alt="" className="album-cover-art flex pe-3 object-contain" />
                 <div className="flex flex-col">
@@ -19,19 +34,10 @@ function MediaPlayer() {
                     <button className="skip-button borderless-btn"><i className="text-[1.2rem] bi bi-skip-end-fill"></i></button>
                     <button className="replay-button borderless-btn"><i className="text-[0.85rem] bi bi-repeat"></i></button>
                 </div>
-                <div className="progress-bar">
-                    <p>song progress bar</p>
-                </div>
+                < SongProgressBar />
             </div>
-            <div className="more-media-commands flex flex-row items-center justify-center object-scale-down">
-                <button className="file-play-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-file-play"></i></button>
-                <button className="mic-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-mic"></i></button>
-                <button className="queue-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-view-list"></i></button>
-                <button className="speaker-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-speaker"></i></button>
-                <button className="volume-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-volume-up"></i></button>
-                <button className="screen-cast-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-cast"></i></button>
-                <button className="screen-size-btn borderless-btn right-bar-icons"><i className="text-[0.8rem] bi bi-arrows-angle-expand"></i></button>
-            </div>
+            < MoreMusicOptions />
+            {/* {smallScreen ? < MiniHamburgerMenu/> : < MoreMusicOptions /> } */}
         </div>
     )
 }
