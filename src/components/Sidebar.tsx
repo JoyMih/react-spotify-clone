@@ -1,7 +1,6 @@
 import MiniCard from "./MiniCard";
 import miniCardData from "../Data/MiniCardData"
 
-// import bluePikmin from "../assets/bluepikmin-1.jpg"
 function Sidebar() {
     const uniqueMiniCards = miniCardData.map((info) => {
         return (

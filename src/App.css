@@ -66,3 +66,32 @@ button:focus-visible {
   height: auto;
   max-width: 100px;
 }
+
+.media-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #121212;
+  color: white;
+  align-items: center;
+}
+
+.current-album-info {
+  display: flex;
+  text-align: start;
+}
+
+.album-cover-art {
+  width: 5rem;
+  height: auto;
+}
+
+/* .play-controller {
+  max-width: fit-content;
+} */
+
+
+.right-bar-icons * {
+  width: 0.01rem;
+}
