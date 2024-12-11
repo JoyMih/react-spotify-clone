@@ -114,13 +114,16 @@ button:focus-visible {
   font-size: 1.5rem;
 }
 
-.placeholder-square {
+/* .placeholder-square {
   width: 150px;
   height: 150px;
   background-color: rgb(169, 161, 161);
+} */
+
+.row-album-format{
+  height: 150px;
+  width: auto;
 }
-
-
 
 
 
